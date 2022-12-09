@@ -1,0 +1,230 @@
+@import "src/styles/shared.module";
+
+.loginPage {
+  background: var(--COLORS_BACKGROUND_WHITE);
+}
+
+#temp{
+  margin: 0 auto;
+  width: 518px;
+  height: 471px;
+
+}
+
+#loginTitle {
+  //@include title-1-regular()
+  /* Добро пожаловать в SCB Monitor! */
+
+
+  width: 235px;
+  height: 56px;
+
+  /* Ubunto Bold 24 */
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  /* or 117% */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  /* Черный */
+
+  color: #333333;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.authWindow{
+  position: absolute;
+  width: 518px;
+  height: 471px;
+  top: 276px;
+
+
+  background: #FFFFFF;
+  box-shadow: 0px 1px 26px rgba(6, 8, 64, 0.08);
+  border-radius: 10px;
+}
+
+
+
+.loginHeaderWrapper{
+
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 75px;
+
+
+  width: 518px;
+  height: 76px;
+  left: 461px;
+  top: 341px;
+
+}
+.imgLeft{
+  position: absolute;
+  width: 1151.58px;
+  height: 921px;
+  left: 0;
+  top: 0;
+
+}
+
+.imgRight{
+  position: absolute;
+  width: 1117.31px;
+  height: 1164.1px;
+  top: 0;
+  right: 0;
+
+}
+#secondInput{
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+
+  width: 335px;
+  height: 44px;
+
+  /* Серый 3 */
+
+  border: 1px solid #EFF0F6;
+  border-radius: 15px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#firstInput{
+  /* Frame 16 */
+
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+
+  width: 335px;
+  height: 44px;
+
+  /* Серый 3 */
+
+  border: 1px solid #EFF0F6;
+  border-radius: 15px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.inputWrap{
+  /* Usuário */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px 0px;
+  gap: 8px;
+
+  width: 518px;
+  height: 192px;
+  //left: 461px;
+  //top: 449px;
+}
+
+
+.hidePassWrap{
+  position: absolute;
+  left: 387.5px;
+  right: 108.5px;
+  top: 263.5px;
+  bottom: 185.5px;
+  cursor: pointer;
+
+
+  max-width: 23.98px;
+  max-height: 23.98px;
+  /* Black 20 */
+
+  border: -1.5px solid #333333;
+
+
+}
+
+.loginButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+
+  position: absolute;
+  width: 335px;
+  height: 48px;
+  left: 91px;
+  bottom: 64px;
+  /* Цвет 3 */
+
+  background: #73DFED;
+  border-radius: 40px;
+}
+#loginButtonText{
+  width: 84px;
+  height: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

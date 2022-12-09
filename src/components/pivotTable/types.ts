@@ -1,0 +1,34 @@
+
+export type PivotTableData = {
+    title: string;
+    hoursTimer: string;
+    hoursTurnstile: string;
+    date1: string;
+    weekDay1: string;
+    timeOnTimer1: string;
+    timeTurnstile1: string;
+    date2: string;
+    weekDay2: string;
+    timeOnTimer2: string;
+    timeTurnstile2: string;
+    date3: string;
+    weekDay3: string;
+    timeOnTimer3: string;
+    timeTurnstile3: string;
+    date4: string;
+    weekDay4: string;
+    timeOnTimer4: string;
+    timeTurnstile4: string;
+    date5: string;
+    weekDay5: string;
+    timeOnTimer5: string;
+    timeTurnstile5: string;
+    date6: string;
+    weekDay6: string;
+    timeOnTimer6: string;
+    timeTurnstile6: string;
+    date7: string;
+    weekDay7: string;
+    timeOnTimer7: string;
+    timeTurnstile7: string;
+};

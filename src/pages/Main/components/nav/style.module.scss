@@ -1,0 +1,482 @@
+@import "src/styles/shared.module";
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.nav {
+  /* background */
+
+  //position: absolute;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  //top: 0px;
+  //right: 0px;
+
+  font-family: "Ubuntu-Regular";
+
+  background: #ffffff;
+  border-radius: 50px 0px 0px 0px;
+}
+
+.notification {
+  /* notification */
+
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  right: 324px;
+  bottom: 0px;
+}
+
+.notificationContainerShow {
+  /* уведомления */
+
+  position: absolute;
+  width: 391px;
+  height: 502px;
+  left: 0px;
+  top: 20px;
+}
+
+.notificationContainerHide {
+  height: 0;
+  opacity: 0;
+}
+
+.notificationPolygon {
+  /* Polygon 13 */
+
+  position: absolute;
+  width: 114px;
+  height: 100px;
+  left: -43px;
+  top: 35px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+  background-color: #ffffff;
+  // box-shadow: 0px 1px 26px rgba(6, 8, 64, 0.08);
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  z-index: 1;
+}
+
+.notificationUnion {
+  /* Rectangle 6 */
+
+  left: -180px;
+  top: 65px;
+
+  /* Union */
+
+  position: absolute;
+  width: 391px;
+  height: 502px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 9px rgba(6, 8, 64, 0.13);
+  z-index: 1;
+}
+
+.notificationContent {
+  /* Frame 178 */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 16px;
+  gap: 16px;
+
+  position: relative;
+  width: 343px;
+  height: 95px;
+  left: 18px;
+  top: 20px;
+
+  /* Цвет 6 */
+
+  border: 1px solid #ebe8fc;
+  border-radius: 10px;
+}
+
+.notificationTimeFrame {
+  /* Frame 176 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 62px;
+  height: 55px;
+
+  /* Цвет 2 */
+
+  background: #a683ff;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.notificationTime {
+  /* 10/022020 */
+
+  width: 42px;
+  height: 32px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  /* Белый */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.notificationTextFrame {
+  /* Frame 177 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 233px;
+  height: 55px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.notificationTitle {
+  /* День рождения Татьяны */
+
+  width: 198px;
+  height: 18px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* Черный */
+
+  color: #333333;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.notificationText {
+  /* Сегодня поздравляем Татьяну. Собираем деньги на подарок... */
+
+  width: 234px;
+  height: 32px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Черный */
+
+  color: #333333;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dotCounter {
+  /* dotCounter */
+
+  /* background */
+
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 20px;
+  bottom: 45px;
+  border-radius: 100%;
+
+  background: #a683ff;
+}
+
+.counter {
+  /* 12 */
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 1px;
+  bottom: 5px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* Белый */
+
+  color: #ffffff;
+}
+
+.icBell {
+  /* ic_bell */
+
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.profile {
+  /* profile */
+
+  position: absolute;
+  width: 226px;
+  height: 57px;
+  top: 24px;
+  right: 36px;
+
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profilepic {
+  /* Group 54 */
+
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  right: 32px;
+  top: 24px;
+  border-radius: 49px;
+}
+
+.profilecarrer {
+  /* UX/UI Designer */
+
+  position: absolute;
+  width: 84px;
+  height: 14px;
+  right: 136px;
+  top: 65px;
+
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #8f8f8f;
+}
+
+.profiletext {
+  /* Татьяна Сидорова */
+
+  position: absolute;
+  width: 138px;
+  height: 18px;
+  right: 136px;
+  top: 36px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.maintitle {
+  /* mainTitle */
+
+  position: absolute;
+  visibility: hidden;
+  width: 175px;
+  height: 33px;
+  right: 1350px;
+  top: 39px;
+}
+
+.signoutContainerShow {
+  /* уведомления */
+
+  position: absolute;
+  width: 144px;
+  height: 79px;
+  left: 70px;
+  top: 80px;
+}
+
+.signoutContainerHide {
+  height: 0;
+  opacity: 0;
+}
+
+.signoutPolygon {
+  /* Polygon 13 */
+
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+  background-color: #ffffff;
+  // box-shadow: 0px 1px 26px rgba(6, 8, 64, 0.08);
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  z-index: 1;
+}
+
+.signoutCard {
+  /* Rectangle 6 */
+
+  position: absolute;
+  width: 144px;
+  height: 58px;
+  right: 40px;
+  top: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 0.75px 19.5px rgba(6, 8, 64, 0.08);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.signoutText {
+  /* Выход */
+
+  position: absolute;
+  width: 60px;
+  height: 18px;
+  left: 25px;
+  top: 24px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* Черный */
+
+  color: #333333;
+}
+
+.signoutIcon {
+  /* SignOut */
+
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 100px;
+  top: 15px;
+}
+
+.notificationItemFrame {
+  /* Frame 8024 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 245px;
+  height: 23px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.notificationItemIcon {
+  /* Group 236 */
+
+  width: 23px;
+  height: 23px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.notificationItemText {
+  /* Совещание */
+
+  width: 214px;
+  height: 14px;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  /* Черный */
+
+  color: #333333;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.notificationItemContent {
+  /* Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. */
+
+  width: 242px;
+  height: 189px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 22px;
+  /* or 220% */
+
+  /* Черный */
+
+  color: #333333;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

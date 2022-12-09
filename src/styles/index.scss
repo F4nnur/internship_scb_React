@@ -1,0 +1,65 @@
+@import "imports";
+@import "shared.module";
+
+:root {
+  //COLORS
+  --COLORS_PRIMARY: #{getColorVarValue("PRIMARY")};
+  --COLORS_SECONDARY: #{getColorVarValue("SECONDARY")};
+
+  --COLORS_BACKGROUND_MEDIUM: #{getColorVarValue("BACKGROUND_MEDIUM")};
+  --COLORS_BACKGROUND_MEDIUM_DARK: #{getColorVarValue("BACKGROUND_MEDIUM_DARK")};
+  --COLORS_BACKGROUND_DARK: #{getColorVarValue("BACKGROUND_DARK")};
+  --COLORS_BACKGROUND_WHITE: #{getColorVarValue("BACKGROUND_WHITE")};
+
+  --COLORS_FONT_LIGHT: #{getColorVarValue("FONT_LIGHT")};
+  --COLORS_FONT_GREY: #{getColorVarValue("FONT_GREY")};
+  //
+
+  //FONTS
+  --FONTS_ubuntu-light: "Ubuntu-Light", sans-serif;
+  --FONTS_ubuntu-regular: "Ubuntu-Regular", sans-serif;
+  --FONTS_ubuntu-medium: "Ubuntu-Medium", sans-serif;
+  --FONTS_ubuntu-bold: "Ubuntu-Bold", sans-serif;
+}
+
+html {
+  height: 100vh;
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--COLORS_BACKGROUND_WHITE);
+  overflow-x: auto;
+  @include text-1-regular();
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+:where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
+  appearance: none;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+:where(input) {
+  width: 100%;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  padding: 0;
+}

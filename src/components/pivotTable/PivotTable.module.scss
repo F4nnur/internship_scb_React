@@ -1,0 +1,126 @@
+@import "src/styles/shared.module";
+.container {
+    background: #FFFFFF;
+    border: 1px solid #EBE8FC;
+    box-shadow: 0px 12px 23.25px rgba(0, 0, 0, 0.01);
+    border-radius: 26px;
+}
+
+.arrow {
+    position: relative;
+    width: 12px;
+    height: 6px;
+    left: 515px;
+    transform: rotate(-360deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrowActive {
+    transform: rotate(-180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.title {
+    width: 87px;
+    height: 24px;
+    margin-left: 34px;
+    margin-top: 22px;
+    @include title-1-medium();
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+
+    /* Черный */
+
+    color: #333333;
+}
+
+.workinfo {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 28px;
+    top: 15px;
+    left: 0px;
+    @include title-1-regular();
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #333333;
+}
+
+.titleCell {
+    position: relative;
+    width: 551px;
+    height: 62px;
+    top: 10px;
+    left: 75px;
+    transition: height 0.2s ease-in-out;
+
+    margin-top: 12px;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+    border-radius: 14px;
+}
+
+.hide {
+    height: 0;
+    opacity: 0;
+    transition: height 0.7s ease-in-out;
+}
+
+.show {
+    height: 235px;
+    opacity: 1;
+    margin-left: 74px;
+    transition: height 0.2s ease-in-out;
+}
+.col_names{
+    display: grid;
+    grid-template-columns: 172px 86px 321px;
+    margin-left: 75px;
+    margin-top: 18px;
+    @include text-1-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+.content_container{
+    display: grid;
+    grid-template-rows: 33px 33px 33px 33px 33px 33px 33px;
+}
+
+.content_2{
+    top: 10px;
+    position: relative;
+    width: 549px;
+    padding-left: 15px;
+    padding-top: 7px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 170px 90px 240px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3D4043;
+    @include text-2-regular;
+    background-color: #ffffff;
+}
+.content_1{
+    top: 10px;
+    position: relative;
+    width: 549px;
+    padding-left: 15px;
+    padding-top: 7px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 170px 90px 240px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3D4043;
+    @include text-2-regular;
+    background-color: #EFF0F6;
+}
+
+

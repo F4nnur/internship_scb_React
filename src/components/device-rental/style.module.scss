@@ -1,0 +1,165 @@
+@import "src/styles/shared.module";
+
+/* Device rental tittle */
+.title {
+  @include title-1-regular();
+  grid-area: h;
+  font-size: 27px;
+  line-height: 32px;
+  width: 243px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-left: 25px;
+}
+
+/* Main device-rental component window */
+.DeviceRental {
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: white;
+  box-sizing: border-box;
+  //position: absolute;
+  //width: 731px;
+  //height: 793px;
+  //left: calc(50% - 974px / 2 + 426px);
+  //top: 10px;
+  border: 1px solid #EBE8FC;
+  box-shadow: 16px 31px rgba(0, 0, 0, 0.01);
+  border-radius: 34px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-areas:
+                  "h h h"
+                  "m m s"
+                  "f f f";
+
+}
+
+/* List of android devices */
+.AndroidListDevice {
+  grid-area: h;
+  margin-top: 130px;
+  margin-left: 370px
+}
+
+/* List of ios devices */
+.IOSListDevice {
+  grid-area: h;
+  margin-top: 130px;
+  margin-left: 30px;
+}
+
+/* Device info container */
+.DeviceItem {
+  margin-top: 25px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 324px;
+  height: 62px;
+
+  border: 1px solid #F1F1F1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.active {
+  background: rgba(239, 240, 246, 0.6);
+
+}
+
+.CheckBox {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 268px;
+
+}
+
+/* IOS tittle style */
+.IOSTittle {
+  @include title-1-regular();
+  font-size: 20px;
+  grid-area: h;
+  margin-top: 115px;
+  margin-left: 30px;
+}
+
+/* Android tittle style */
+.AndroidTittle {
+  @include title-1-regular();
+  font-size: 20px;
+  grid-area: h;
+  margin-top: 115px;
+  margin-left: 370px;
+}
+
+/* Icon in device rental */
+.DeviceImage {
+  padding-right: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+/* Style for <p> in device */
+.DeviceParagraph {
+  margin-top: 3px;
+  @include title-1-regular();
+  width: 152px;
+  height: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+}
+
+
+.EmptyCircle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: 11px;
+  margin-left: 270px;
+  background: var(--COLORS_BACKGROUND_WHITE);
+  border: 1px solid #F1F1F1;
+  border-radius: 12px;
+
+}
+
+
+.DeviceChoiced {
+  margin-top: 3px;
+  @include title-1-regular();
+  width: 152px;
+  height: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  opacity: 0.6;
+}
+
+.FreeDevice {
+  @include title-1-regular();
+
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 45px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.RentalledParagraph {
+  @include title-1-regular();
+
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 45px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B7B7B;
+}

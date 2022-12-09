@@ -1,0 +1,241 @@
+@import "src/styles/shared.module";
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.container {
+  /* background */
+
+  box-sizing: border-box;
+
+  //position: absolute;
+  //width: 824px;
+  //height: 534px;
+  //left: 41px;
+  //top: 1212px;
+  font-family: "Ubuntu-Regular";
+  position: relative;
+
+  background: #ffffff;
+
+  /* Цвет 6 */
+
+  border: 1px solid #ebe8fc;
+  box-shadow: 0px 16px 31px rgba(0, 0, 0, 0.01);
+  border-radius: 34px;
+}
+
+.dropdownicon1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 678px;
+  top: 5px;
+}
+
+.dropdownicon {
+  /* Group 236 */
+
+  transform: rotate(-180deg);
+}
+
+.title {
+  /* Group 7995 */
+
+  /* Сотрудники */
+
+  position: absolute;
+  width: 163px;
+  height: 32px;
+  top: 47px;
+  left: 45px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+
+  /* Черный */
+
+  color: #333333;
+}
+
+.workinfo {
+  /* Frontend - разработчики */
+
+  position: relative;
+  width: 500px;
+  height: 28px;
+  top: 15px;
+  left: 0px;
+
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  /* Черный */
+
+  color: #333333;
+}
+
+.workcontent {
+  /* Rectangle 190 */
+
+  box-sizing: border-box;
+
+  position: relative;
+  width: 734px;
+  height: 82px;
+  left: -35px;
+  top: 100px;
+  transition: height 0.2s ease-in-out;
+
+  border: 1px solid #f1f1f1;
+  border-radius: 14px;
+}
+
+.work {
+  /* Rectangle 190 */
+
+  box-sizing: border-box;
+
+  position: relative;
+  width: 734px;
+  height: 82px;
+  top: 103px;
+  left: 45px;
+  transition: height 0.2s ease-in-out;
+
+  border: 1px solid #f1f1f1;
+  border-radius: 14px;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+}
+
+.show {
+  display: inline-flex;
+  height: 90px;
+  opacity: 1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.name {
+  /* Татьяна Смирнова */
+
+  position: relative;
+  width: 143px;
+  height: 28px;
+
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* Черный */
+
+  color: #333333;
+}
+
+.info {
+  /* Женский банк */
+
+  position: relative;
+  width: 81px;
+  height: 14px;
+  left: 71px;
+  top: 120px;
+
+  line-height: 14px;
+  /* identical to box height */
+
+  /* Цвет 4 */
+
+  color: #7b7b7b;
+}
+
+.phonetitle {
+  /* Номер телефона */
+
+  position: relative;
+  width: 97px;
+  height: 14px;
+  right: 550px;
+  top: 120px;
+
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #84888c;
+}
+
+.birthdaytitle {
+  /* Дата рождения */
+
+  position: relative;
+  width: 88px;
+  height: 14px;
+  right: 490px;
+  top: 120px;
+
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #84888c;
+}
+
+.skillstitle {
+  /* Навыки */
+
+  position: relative;
+  width: 45px;
+  height: 14px;
+  right: 430px;
+  top: 120px;
+
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #84888c;
+}
+
+.phone {
+  /* +7 (900) 600-04-81 */
+
+  position: relative;
+  width: 136px;
+  height: 18px;
+  right: 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #3d4043;
+}
+
+.birthday {
+  /* 28.06.2000 */
+
+  position: relative;
+  width: 81px;
+  height: 18px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #3d4043;
+}
+
+.skills {
+  position: relative;
+  width: 208px;
+  height: 44px;
+
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  color: #3d4043;
+}

@@ -1,0 +1,51 @@
+stages:
+    - build
+    - deploy
+
+build to dev:
+    #tags:
+    #    - camelninja
+    stage: build
+    image: docker
+    services:
+        - docker:dind
+    before_script:
+        - export VERSION=$CI_COMMIT_SHORT_SHA
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    script:
+        - docker build -t $CI_REGISTRY_IMAGE:$VERSION .
+        - docker tag $CI_REGISTRY_IMAGE:$VERSION $CI_REGISTRY_IMAGE:latest
+        - docker push $CI_REGISTRY_IMAGE
+    after_script:
+        - docker logout $CI_REGISTRY
+    only:
+        - dev
+        - ci-cd
+
+deploy to dev:
+    tags:
+        - camelninja
+    stage: deploy
+    variables:
+        CONTAINER_NAME: $CI_PROJECT_NAME-dev
+        PORT: 7000
+
+    before_script:
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+    script:
+        - docker pull $CI_REGISTRY_IMAGE:latest
+        - docker stop ${CONTAINER_NAME} || true
+        - docker rm -f ${CONTAINER_NAME} || true
+        - >
+            docker run 
+            --name=$CONTAINER_NAME 
+            -p $PORT:80
+            --restart always 
+            -d 
+            $CI_REGISTRY_IMAGE:latest
+    after_script:
+        - docker logout $CI_REGISTRY
+    only:
+        - dev
+
